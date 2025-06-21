@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>原神主题网页 - 反馈</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 顶部横幅：展示原神主题 -->
+  <div class="banner">
+    <h1>反馈</h1>
+  </div>
+
+  <!-- 导航栏：使用JavaScript控制跳转 -->
+  <nav class="nav" id="main-nav">
+    <ul>
+      <li><a href="index.html">首页</a></li>
+      <li><a href="character.html">角色介绍</a></li>
+      <li><a href="map.html">场景地图</a></li>
+      <li><a href="news.html">版本资讯</a></li>
+      <li><a href="feedback.html">反馈</a></li>
+    </ul>
+  </nav>
+
+  <!-- 主要内容容器 -->
+  <div class="container">
+    <div id="feedback-content">
+      <h2 class="title">反馈</h2>
+      <p>感谢您的支持！如果您有任何建议或问题，请通过以下表单与我们联系。</p>
+      
+      <form id="feedback-form" action="https://formspree.io/f/你的Formspree表单ID" method="POST">
+        <div class="form-group">
+          <label for="name">名字：</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">邮箱：</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">反馈内容：</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        
+        <input type="hidden" name="_to" value="2440522638@qq.com">
+        <input type="hidden" name="_subject" value="原神主题网页反馈">
+        <input type="hidden" name="_next" value="/thank-you.html">
+        
+        <button type="submit" class="btn">发送</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 底部版权 -->
+  <div class="footer">
+    <p>原神版权归米哈游所有</p>
+  </div>
+
+  <!-- JavaScript：控制导航跳转 -->
+  <script src="main.js"></script>
+</body>
+</html>

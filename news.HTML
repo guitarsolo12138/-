@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>原神主题网页 - 版本资讯</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 1. 顶部横幅：展示原神主题 -->
+  <div class="banner">
+    <h1>版本资讯</h1>
+  </div>
+
+  <!-- 2. 导航栏：使用JavaScript控制跳转 -->
+  <nav class="nav" id="main-nav">
+    <ul>
+      <li><a href="index.html">首页</a></li>
+      <li><a href="character.html">角色介绍</a></li>
+      <li><a href="map.html">场景地图</a></li>
+      <li><a href="news.html">版本资讯</a></li>
+      <li><a href="feedback.html">反馈</a></li>
+    </ul>
+  </nav>
+
+  <!-- 3. 主要内容容器 -->
+  <div class="container">
+    <div id="news-content">
+      <h2 class="title">最新资讯</h2>
+      <p>了解原神的最新版本更新、活动和公告。</p>
+      
+      <div class="news-card">
+        <img src="https://uploadstatic.mihoyo.com/ys/upload/ann/2025/05/15/114410343/3c3c8a5b2d5c3c5e0c3c3e4e4e4e4e4e_7873111111111111111.jpg" alt="4.7版本更新">
+        <div class="news-content">
+          <div class="news-meta">
+            <span class="version-tag">4.7版本</span>
+            <span>发布日期: 2025-05-15</span>
+          </div>
+          <h3>「星与深渊的邂逅」版本更新公告</h3>
+          <p>全新角色「丝柯克」登场！来自未来的旅行者，拥有独特的时空能力。新增区域「虚境之渊」，探索神秘的深渊领域...</p>
+          <button class="read-more-btn" data-news-id="1">阅读详情</button>
+        </div>
+      </div>
+      
+      <div class="news-card">
+        <img src="https://uploadstatic.mihoyo.com/ys/upload/ann/2025/04/20/114410343/3c3c8a5b2d5c3c5e0c3c3e4e4e4e4e4e_7873111111111111111.jpg" alt="限时活动">
+        <div class="news-content">
+          <div class="news-meta">
+            <span class="version-tag">活动</span>
+            <span>活动时间: 2025-04-20至2025-05-10</span>
+          </div>
+          <h3>「风花的邀约」限时活动开启</h3>
+          <p>参与风花节庆典，完成任务获取限定奖励。全新小游戏「风花竞逐」上线，与好友一同竞技，赢取丰厚奖励...</p>
+          <button class="read-more-btn" data-news-id="2">阅读详情</button>
+        </div>
+      </div>
+      
+      <div class="news-card">
+        <img src="https://uploadstatic.mihoyo.com/ys/upload/ann/2025/03/10/114410343/3c3c8a5b2d5c3c5e0c3c3e4e4e4e4e4e_7873111111111111111.jpg" alt="角色预告">
+        <div class="news-content">
+          <div class="news-meta">
+            <span class="version-tag">角色预告</span>
+            <span>发布日期: 2025-03-10</span>
+          </div>
+          <h3>全新五星角色「瓦雷莎」即将登场</h3>
+          <p>雷系法术武器角色，纳塔的守护者。拥有强大的聚怪能力和范围伤害，是团队中不可或缺的支援角色...</p>
+          <button class="read-more-btn" data-news-id="3">阅读详情</button>
+        </div>
+      </div>
+      
+      <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">&raquo;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. 底部版权 -->
+  <div class="footer">
+    <p>原神版权归米哈游所有</p>
+  </div>
+
+  <!-- 5. JavaScript：控制导航跳转 -->
+  <script src="main.js"></script>
+</body>
+</html>
+  

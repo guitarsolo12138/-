@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>原神主题网页 - 角色介绍</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 顶部横幅：展示原神主题 -->
+  <div class="banner">
+    <h1>角色介绍</h1>
+  </div>
+
+  <!-- 导航栏：使用JavaScript控制跳转 -->
+  <nav class="nav" id="main-nav">
+    <ul>
+      <li><a href="index.html">首页</a></li>
+      <li><a href="character.html">角色介绍</a></li>
+      <li><a href="map.html">场景地图</a></li>
+      <li><a href="news.html">版本资讯</a></li>
+      <li><a href="feedback.html">反馈</a></li>
+    </ul>
+  </nav>
+
+  <!-- 主要内容容器 -->
+  <div class="container">
+    <div id="character-content">
+      <h2 class="title">角色攻略</h2>
+      <p>探索提瓦特大陆上的各种角色，了解他们的技能、背景故事和最佳玩法策略。</p>
+      
+      <h2 class="title">全角色列表</h2>
+      <div class="character-list">
+        <div class="character-card">
+          <img src="https://upload-bbs.miyoushe.com/upload/2023/12/28/291110358/92a64668ac7fd5b3c34b8a0849bb4451_333374985965845606.jpg?x-oss-process=image//resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,jpg" alt="甘雨">
+          <h3>甘雨</h3>
+          <p>冰系弓箭角色，璃月七星的秘书。擅长远程狙击和范围伤害。</p>
+          <button class="btn" onclick="showDetails('甘雨')">查看详情</button>
+        </div>
+        <div class="character-card">
+          <img src="https://upload-bbs.miyoushe.com/upload/2025/05/13/291110358/1eb0c71eba3aa80bb18870b13146c35c_527457787960161443.png?x-oss-process=image//resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,png" alt="丝柯克">
+          <h3>丝柯克</h3>
+          <p>冰系法器角色，来自未来的旅行者。拥有独特的技能机制和治疗能力。</p>
+          <button class="btn" onclick="showDetails('丝柯克')">查看详情</button>
+        </div>
+        <div class="character-card">
+          <img src="https://upload-bbs.miyoushe.com/upload/2025/05/22/291110358/18168a5eb3f2f548bfb6baadf246eaef_2822591060395939491.png?x-oss-process=image//resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,png" alt="雷电将军">
+          <h3>雷电将军</h3>
+          <p>雷系单手剑角色，稻妻的统治者。以强大的爆发伤害和持续输出能力著称。</p>
+          <button class="btn" onclick="showDetails('雷电将军')">查看详情</button>
+        </div>
+        <div class="character-card">
+          <img src="https://upload-bbs.miyoushe.com/upload/2025/02/18/291110358/f87de536a05df0395a58a84c4e601c9f_5999175768894594838.png?x-oss-process=image//resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,png" alt="瓦蕾莎">
+          <h3>瓦蕾莎</h3>
+          <p>雷系法器角色，蒙德的守护者。擅长控制和聚怪，提供伤害加成。</p>
+          <button class="btn" onclick="showDetails('瓦蕾莎')">查看详情</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 角色详细信息模态框 -->
+  <div id="character-details" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeDetails()">&times;</span>
+      <h2 id="character-name"></h2>
+      <img id="character-image" src="" alt="">
+      <p id="character-description"></p>
+      <h3>技能</h3>
+      <p id="character-skills"></p>
+      <h3>推荐武器</h3>
+      <p id="character-weapons"></p>
+      <h3>推荐圣遗物</h3>
+      <p id="character-artifacts"></p>
+    </div>
+  </div>
+
+  <!-- 底部版权 -->
+  <div class="footer">
+    <p>原神版权归米哈游所有</p>
+  </div>
+
+  <!-- JavaScript：控制导航跳转和角色详情显示 -->
+  <script src="main.js"></script>
+  <script>
+    function showDetails(character) {
+      const details = {
+        甘雨: {
+          image: "https://upload-bbs.miyoushe.com/upload/2023/12/28/291110358/92a64668ac7fd5b3c34b8a0849bb4451_333374985965845606.jpg?x-oss-process=image//resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,jpg",
+          description: "冰系弓箭角色，璃月七星的秘书。擅长远程狙击和范围伤害。",
+          skills: "冰羽神射：发射冰箭，造成冰元素伤害。霜华绽放：召唤冰元素领域，对敌人造成持续伤害。",
+          weapons: "天空之翼、阿莫斯的弓",
+          artifacts: "冰风迷途的勇士、绝缘之旗印"
+        },
+        丝柯克: {
+          image: "https://upload-bbs.miyoushe.com/upload/2025/05/13/291110358/1eb0c71eba3aa80bb18870b13146c35c_527457787960161443.png?x-oss-process=image//resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,png",
+          description: "冰系法器角色，来自未来的旅行者。拥有独特的技能机制和治疗能力。",
+          skills: "冰霜之环：召唤冰环，对敌人造成冰元素伤害。冰封之心：治疗队友并恢复能量。",
+          weapons: "天空之卷、尘世之锁",
+          artifacts: "被怜爱的少女、冰风迷途的勇士"
+        },
+        雷电将军: {
+          image: "https://upload-bbs.miyoushe.com/upload/2025/05/22/291110358/18168a5eb3f2f548bfb6baadf246eaef_2822591060395939491.png?x-oss-process=image//resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,png",
+          description: "雷系单手剑角色，稻妻的统治者。以强大的爆发伤害和持续输出能力著称。",
+          skills: "雷霆万象：释放雷电，造成高额雷元素伤害。神变·天眼开：进入雷电领域，提升攻击力。",
+          weapons: "天空之刃、黑剑",
+          artifacts: "如雷的盛怒、绝缘之旗印"
+        },
+        瓦蕾莎: {
+          image: "https://upload-bbs.miyoushe.com/upload/2025/02/18/291110358/f87de536a05df0395a58a84c4e601c9f_5999175768894594838.png?x-oss-process=image//resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,png",
+          description: "雷系法器角色，蒙德的守护者。擅长控制和聚怪，提供伤害加成。",
+          skills: "雷电之环：召唤雷电环，对敌人造成雷元素伤害。雷电之怒：释放雷电，对敌人造成高额雷元素伤害。",
+          weapons: "天空之卷、尘世之锁",
+          artifacts: "如雷的盛怒、绝缘之旗印"
+        }
+      };
+
+      const modal = document.getElementById('character-details');
+      const modalContent = document.querySelector('.modal-content');
+      const characterName = document.getElementById('character-name');
+      const characterImage = document.getElementById('character-image');
+      const characterDescription = document.getElementById('character-description');
+      const characterSkills = document.getElementById('character-skills');
+      const characterWeapons = document.getElementById('character-weapons');
+      const characterArtifacts = document.getElementById('character-artifacts');
+
+      characterName.textContent = character;
+      characterImage.src = details[character].image;
+      characterDescription.textContent = details[character].description;
+      characterSkills.textContent = details[character].skills;
+      characterWeapons.textContent = details[character].weapons;
+      characterArtifacts.textContent = details[character].artifacts;
+
+      modal.style.display = "block";
+    }
+
+    function closeDetails() {
+      const modal = document.getElementById('character-details');
+      modal.style.display = "none";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>原神主题网页 - 场景地图</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 1. 顶部横幅：展示原神主题 -->
+  <div class="banner">
+    <h1>场景地图</h1>
+  </div>
+
+  <!-- 2. 导航栏：使用JavaScript控制跳转 -->
+  <nav class="nav" id="main-nav">
+    <ul>
+      <li><a href="index.html">首页</a></li>
+      <li><a href="character.html">角色介绍</a></li>
+      <li><a href="map.html">场景地图</a></li>
+      <li><a href="news.html">版本资讯</a></li>
+      <li><a href="feedback.html">反馈</a></li>
+    </ul>
+  </nav>
+
+  <!-- 3. 主要内容容器 -->
+  <div class="container">
+    <div id="map-content">
+      <h2 class="title">提瓦特大陆地图</h2>
+      <p>探索原神中的各个区域，发现隐藏的宝藏和秘密。</p>
+      
+      <div class="map-container">
+        <div class="map-image">
+          <!-- 地图图片 -->
+          <img src="https://uploadstatic.mihoyo.com/ys/upload/ann/2023/08/24/114410343/6c3c8a5b2d5c3c5e0c3c3e4e4e4e4e4e_7873111111111111111.jpg" alt="提瓦特大陆地图" style="width:100%;height:100%;object-fit:cover;">
+        </div>
+        
+        <div class="map-controls">
+          <div class="search-bar">
+            <input type="text" placeholder="搜索地点...">
+            <button>搜索</button>
+          </div>
+          
+          <div class="map-filters">
+            <label>筛选：</label>
+            <select>
+              <option>全部地点</option>
+              <option>任务地点</option>
+              <option>宝箱位置</option>
+              <option>资源点</option>
+              <option>怪物分布</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      
+      <h2 class="title">主要区域</h2>
+      <div class="regions">
+        <div class="region-card">
+          <img src="https://uploadstatic.mihoyo.com/ys/upload/ann/2023/08/24/114410343/6c3c8a5b2d5c3c5e0c3c3e4e4e4e4e4e_7873111111111111111.jpg" alt="蒙德" style="width:100%;height:120px;object-fit:cover;border-radius:4px;">
+          <h3>蒙德</h3>
+          <p>风与牧歌的城邦</p>
+        </div>
+        <div class="region-card">
+          <img src="https://uploadstatic.mihoyo.com/ys/upload/ann/2023/08/24/114410343/6c3c8a5b2d5c3c5e0c3c3e4e4e4e4e4e_7873111111111111111.jpg" alt="璃月" style="width:100%;height:120px;object-fit:cover;border-radius:4px;">
+          <h3>璃月</h3>
+          <p>契约与岩牢的城邦</p>
+        </div>
+        <div class="region-card">
+          <img src="https://uploadstatic.mihoyo.com/ys/upload/ann/2023/08/24/114410343/6c3c8a5b2d5c3c5e0c3c3e4e4e4e4e4e_7873111111111111111.jpg" alt="稻妻" style="width:100%;height:120px;object-fit:cover;border-radius:4px;">
+          <h3>稻妻</h3>
+          <p>永恒与雷电的群岛</p>
+        </div>
+        <div class="region-card">
+          <img src="https://uploadstatic.mihoyo.com/ys/upload/ann/2023/08/24/114410343/6c3c8a5b2d5c3c5e0c3c3e4e4e4e4e4e_7873111111111111111.jpg" alt="须弥" style="width:100%;height:120px;object-fit:cover;border-radius:4px;">
+          <h3>须弥</h3>
+          <p>智慧与森林的国度</p>
+        </div>
+        <div class="region-card">
+          <img src="https://uploadstatic.mihoyo.com/ys/upload/ann/2023/08/24/114410343/6c3c8a5b2d5c3c5e0c3c3e4e4e4e4e4e_7873111111111111111.jpg" alt="枫丹" style="width:100%;height:120px;object-fit:cover;border-radius:4px;">
+          <h3>枫丹</h3>
+          <p>正义与水之国度</p>
+        </div>
+        <div class="region-card">
+          <img src="https://uploadstatic.mihoyo.com/ys/upload/ann/2023/08/24/114410343/6c3c8a5b2d5c3c5e0c3c3e4e4e4e4e4e_7873111111111111111.jpg" alt="枫丹" style="width:100%;height:120px;object-fit:cover;border-radius:4px;">
+          <h3>纳塔</h3>
+          <p>战争与龙的国度</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. 底部版权 -->
+  <div class="footer">
+    <p>原神版权归米哈游所有</p>
+  </div>
+
+    <link rel="stylesheet" href="styles.css">
+
+  <!-- 5. JavaScript：控制导航跳转 -->
+  <script src="main.js"></script>
+</body>
+</html>
+  
